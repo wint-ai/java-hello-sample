@@ -5,14 +5,14 @@
 This is a sample application for the [Spring Boot](https://spring.io/projects/spring-boot) framework.
 It is a simple REST API with endpoint:
 
-* `GET /hello` - returns a JSON object with a greeting message and the environment name.
+* `GET /hello` - returns a JSON object with a greeting message and the application environment name.
   example:
 
 > {"msg":"Hello World!","env":"prod"}
 
-Environment variable can be set to change the environment name: SPRING_PROFILES_ACTIVE=prod
+Environment variable can be set to change the application environment name: SPRING_PROFILES_ACTIVE=prod
 
-Project contains tests, test report is generated in `build/test-results` in xml format.
+Project contains tests, the test report is generated in `build/test-results` in xml format.
 
 ## Requirements
 * Java 17
@@ -26,7 +26,7 @@ Project contains tests, test report is generated in `build/test-results` in xml 
 4. > java -jar build/libs/java-hello-sample-1.0.0.jar
 
 ## Docker image
-Image can be built with command:
+Image can be built with the command:
 > ./gradlew jibDockerBuild
 
-Command will create image in the local Docker registry.
+The command will create the image in the local Docker registry.
