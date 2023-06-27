@@ -36,7 +36,7 @@ val appMainClassName = "ai.wint.javasample.JavaSampleApplication"
 
 jib {
     from {
-        image = "eclipse-temurin:17.0.4_8-jre-focal"
+        image = "eclipse-temurin:17"
     }
     to {
         image = "java-sample:latest"

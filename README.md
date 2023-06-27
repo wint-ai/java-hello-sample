@@ -14,6 +14,8 @@ Environment variable can be set to change the application environment name: SPRI
 
 Project contains tests, the test report is generated in `build/test-results` in xml format.
 
+Service is configured to listen on port 8090.
+
 ## Requirements
 * Java 17
 * Docker
@@ -30,3 +32,5 @@ Image can be built with the command:
 > ./gradlew jibDockerBuild
 
 The command will create the image in the local Docker registry.
+
+Also, repository contains Dockerfile to build the image.
