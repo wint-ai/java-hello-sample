@@ -15,8 +15,8 @@ Environment variable can be set to change the environment name: SPRING_PROFILES_
 Project contains tests, test report is generated in `build/test-results` in xml format.
 
 ## Requirements
-
 * Java 17
+* Docker
 
 ## How to build and start
 
@@ -24,3 +24,9 @@ Project contains tests, test report is generated in `build/test-results` in xml 
 2. > cd java-hello-sample
 3. > ./gradlew build
 4. > java -jar build/libs/java-hello-sample-1.0.0.jar
+
+## Docker image
+Image can be built with command:
+> ./gradlew jibDockerBuild
+
+Command will create image in the local Docker registry.
